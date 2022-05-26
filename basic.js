@@ -1,38 +1,38 @@
-// First answer
- const words = ['bob','Alicia','Kgothatso']
+// // First answer
+//  const words = ['bob','Alicia','Kgothatso']
 
- const getLongestWord = (word) => {
-    let longestWord = word.sort((a,b) => a.length - b.length).reverse();
-    return longestWord[0]
-}
- console.log(getLongestWord(words))
+//  const getLongestWord = (word) => {
+//     let longestWord = word.sort((a,b) => a.length - b.length).reverse();
+//     return longestWord[0]
+// }
+//  console.log(getLongestWord(words))
 
- //  second Quation
- const array = [1, 2, 3]; 
+//  //  second Quation
+//  const array = [1, 2, 3]; 
  
- const calculateList = (list) => {
+//  const calculateList = (list) => {
  
- let sum = 0;
+//  let sum = 0;
  
- for (let i = 0; i < array. length; i++) { sum += array[i];
- }
+//  for (let i = 0; i < array. length; i++) { sum += array[i];
+//  }
  
- return sum
+//  return sum
  
- }
+//  }
  
- console.log(calculateList(array))
+//  console.log(calculateList(array))
 
 
-// Third answer
+// // Third answer
 
-const calculateValues = (num1 , numb2) => {
-    const addedValues = num1 + numb2
+// const calculateValues = (num1 , numb2) => {
+//     const addedValues = num1 + numb2
     
-    return addedValues 
-    }
+//     return addedValues 
+//     }
     
-    console.log(calculateValues (1 , 2))
+//     console.log(calculateValues (1 , 2))
 
 
 // fourth answer
@@ -43,13 +43,14 @@ const calculateValues = (num1 , numb2) => {
 //         newArr.push(arr1[i].name);
 //     }
 // console.log()
-function Names(){
-    let people = [{name:"moral" , surname:"smith"} , {name:"thabo" , surname:"king"}]
+let people = [{name:"moral" , surname:"smith"} , {name:"thabo" , surname:"king"}]
+function Names(list){
     let newArray = [];
-    for( let i = 0; i < people.length; i++){
 
-        newArry.push(people[i].name);
+    for(let i in list){
+          newArray.push(list[i].name);
+
     }
     return newArray
 }
-console.log(Names())
+console.log(Names(people))
